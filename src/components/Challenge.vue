@@ -126,20 +126,26 @@ export default {
       this.dialogFormVisible = true;
 
     },
-    replay() {
+    hideDialog(){
       this.dialogFormVisible = false;
-      this.count=0;
-      this.score=0;
-      this.currQuestion=Object.assign({},this.questionList[0]);
+
+    },
+    replay() {
+      this.hideDialog();
+      this.clearStatus();
     },
     back() {
-      this.dialogFormVisible = false;
-      this.count=0;
-      this.score=0;
-      this.currQuestion=Object.assign({},this.questionList[0]);
+      this.hideDialog();
+      this.clearStatus();
       this.$router.push({
         path:'/'
       })
+    },
+    clearStatus(){
+      this.count=0;
+      this.score=0;
+      this.currQuestion=Object.assign({},this.questionList[0]);
+
     }
   }
 }
