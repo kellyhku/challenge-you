@@ -120,7 +120,7 @@ export default {
     nextQuestion() {
       ++this.count
       this.showNextBtn = false;
-      this.currQuestion = this.questionList[this.count]
+      this.currQuestion = Object.assign({},this.questionList[this.count])
     },
     showDialog(){
       this.dialogFormVisible = true;
