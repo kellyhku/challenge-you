@@ -1,0 +1,31 @@
+[{
+    "question":"1+1=?",
+    "category":"Math",
+    "option":[
+        {"name":"1"},
+        {"name":"2"},
+        {"name":"3"},
+        {"name":"4"}
+    ],
+    "answer":1
+},{
+    "question":"冰的熔点是？",
+    "category":"Science & Nature",
+    "option":[
+        {"name":"4度"},
+        {"name":"6度"},
+        {"name":"0度"},
+        {"name":"-2度"}
+    ],
+    "answer":2
+},{
+    "question":"林黛玉的父亲是谁？",
+    "category":"Literature",
+    "option":[
+        {"name":"林冲"},
+        {"name":"林则徐"},
+        {"name":"林宛瑜"},
+        {"name":"林**"}
+    ],
+    "answer":3
+}]
